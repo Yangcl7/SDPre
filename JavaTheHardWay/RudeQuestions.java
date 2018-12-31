@@ -4,7 +4,7 @@ public class RudeQuestions {
   public static void main( String[] args ) {
     String name;
     int age;
-    double weight, income;
+    double weight, income, high;
 
     Scanner keyboard = new Scanner(System.in);
 
@@ -26,5 +26,14 @@ public class RudeQuestions {
     System.out.println( " and not per year!" );
     System.out.print( " Well, thanks for answering my rude questions, " );
     System.out.println( name + ". "  );
+
+    System.out.println( "And one more question, what's your high? ");
+    high = keyboard.nextDouble();
+
+    System.out.println(+high +"eh?" );
+    System.out.println(" can you dunk being " +high + "tall?");
+    // Putting a integer when it is expecting a double will blow up I think because integer cant be with desmos.
+    // It didn't blow up when enter a integer or double when it is expecting a String, I think it's because String can be all.
+    //
     }
 }
