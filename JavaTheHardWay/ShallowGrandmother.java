@@ -4,8 +4,8 @@ public class ShallowGrandmother {
   public static void main( String[] args ) {
     Scanner keyboard = new Scanner(System.in);
     int age;
-    double income, cute;
-    boolean allowed;
+    double income, cute, happy;
+    boolean allowed, allowed2;
 
     System.out.print( "Enter your age: " );
     age = keyboard.nextInt();
@@ -19,6 +19,13 @@ public class ShallowGrandmother {
     allowed = ( age > 25 && age < 40 && ( income > 50000 || cute >= 8.5 ) );
 
     System.out.println( "Allowed to date my grandchild? " + allowed );
+
+    System.out.println( "How happy do you make them?");
+    happy = keyboard.nextDouble();
+
+    allowed2 = ( happy >= 7 );
+
+    System.out.println( "Allowed to date my grandchild? " + allowed2 );
 
   }
 }
